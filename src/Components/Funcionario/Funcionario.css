@@ -1,0 +1,41 @@
+.Card{
+    display: grid;
+    grid-template-areas: 
+    "nome nome"
+    "setor data"
+    "salario salario"
+    "dependentes dependentes"
+    "resultado resultado";
+    gap: 2em;
+    border: 1px solid black;
+  }
+  
+  .Nome{
+    font-size: 3em;
+    grid-area: nome;
+  }
+  
+  .Setor{
+    font-size: 1em;
+    grid-area: setor;
+  }
+  
+  .Data{
+    font-size: 1em;
+    grid-area: data;
+  }
+  
+  .Salario{
+    font-size: 2em;
+    grid-area: salario;
+  }
+  
+  .Dependentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: dependentes;
+  }
+  
+  .Resultado{
+    grid-area: resultado;
+  }
